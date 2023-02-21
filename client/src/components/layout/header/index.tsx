@@ -51,7 +51,6 @@ export const Header: React.FC = () => {
               setMode();
             }}
           >
-            {/* {mode === "dark" ? <LightModeOutlined /> : <DarkModeOutlined />} */}
             {mode === "dark" ? <FlashlightOnIcon /> : <FlashlightOffIcon />}
           </IconButton>
           <FormControl sx={{ m: 1, minWidth: 120 }}>

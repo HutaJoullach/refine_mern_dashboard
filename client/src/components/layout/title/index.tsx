@@ -30,9 +30,9 @@ export const Title: React.FC<TitleProps> = ({ collapsed }) => {
                 marginTop: "15px",
               }}
             />
-            <div>
+            {/* <div>
               <p>refine_mern_dashboard</p>
-            </div>
+            </div> */}
           </>
         )}
       </Link>
