@@ -16,6 +16,8 @@ import {
   Typography,
 } from "@pankod/refine-mui";
 import { DarkModeOutlined, LightModeOutlined } from "@mui/icons-material";
+import FlashlightOffIcon from "@mui/icons-material/FlashlightOff";
+import FlashlightOnIcon from "@mui/icons-material/FlashlightOn";
 
 import { ColorModeContext } from "contexts";
 import i18n from "i18n";
@@ -49,7 +51,8 @@ export const Header: React.FC = () => {
               setMode();
             }}
           >
-            {mode === "dark" ? <LightModeOutlined /> : <DarkModeOutlined />}
+            {/* {mode === "dark" ? <LightModeOutlined /> : <DarkModeOutlined />} */}
+            {mode === "dark" ? <FlashlightOnIcon /> : <FlashlightOffIcon />}
           </IconButton>
           <FormControl sx={{ m: 1, minWidth: 120 }}>
             <Select
