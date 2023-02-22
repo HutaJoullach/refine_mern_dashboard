@@ -1,7 +1,7 @@
 import React from "react";
 
-const agentCard = () => {
-  return <div>agentCard</div>;
+const AgentCard = () => {
+  return <div>AgentCard</div>;
 };
 
-export default agentCard;
+export default AgentCard;

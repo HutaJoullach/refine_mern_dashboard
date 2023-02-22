@@ -1,7 +1,7 @@
 import React from "react";
 
-const propertyReferrals = () => {
-  return <div>propertyReferrals</div>;
+const PropertyReferrals = () => {
+  return <div>PropertyReferrals</div>;
 };
 
-export default propertyReferrals;
+export default PropertyReferrals;
