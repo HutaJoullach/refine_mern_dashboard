@@ -242,13 +242,22 @@ export const Sider: typeof DefaultSider = ({ render }) => {
               backgroundColor: "transparent",
             },
             justifyContent: "center",
+            display: "flex",
+            // paddingRight: "16px",
+            // paddingLeft: "16px",
+            borderRadius: "8px",
+            minHeight: "56px",
+            // minHeight: "36px",
+            // width: "90%",
           }}
         >
           <ListItemIcon
             sx={{
               justifyContent: "center",
               minWidth: 36,
-              color: "primary.contrastText",
+              // color: "primary.contrastText",
+              color: "#808191",
+              margin: "0px auto",
             }}
           >
             <Dashboard />

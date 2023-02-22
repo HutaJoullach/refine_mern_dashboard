@@ -9,6 +9,17 @@ import {
   ReadyPage,
   ErrorComponent,
 } from "@pankod/refine-mui";
+import {
+  AccountCircleOutlined,
+  ChatBubble,
+  ChatBubbleOutline,
+  ChatBubbleOutlined,
+  PeopleAltOutlined,
+  PeopleOutline,
+  PeopleOutlined,
+  StarOutlineRounded,
+  VillaOutlined,
+} from "@mui/icons-material";
 
 import dataProvider from "@pankod/refine-simple-rest";
 import { MuiInferencer } from "@pankod/refine-inferencer/mui";
@@ -17,9 +28,20 @@ import axios, { AxiosRequestConfig } from "axios";
 import { useTranslation } from "react-i18next";
 import { ColorModeContextProvider } from "contexts";
 import { Title, Sider, Layout, Header } from "components/layout";
-import { Login } from "pages/login";
 import { CredentialResponse } from "interfaces/google";
 import { parseJwt } from "utils/parse-jwt";
+
+import {
+  Login,
+  Home,
+  Agents,
+  MyProfile,
+  PropertyDetails,
+  AllProperties,
+  CreateProperty,
+  AgentProfile,
+  EditProperty,
+} from "pages";
 
 const axiosInstance = axios.create();
 axiosInstance.interceptors.request.use((request: AxiosRequestConfig) => {
@@ -108,11 +130,33 @@ function App() {
           resources={[
             {
               name: "property",
-              // list: MuiInferencer,
+              list: MuiInferencer,
+              icon: <VillaOutlined />,
               // edit: MuiInferencer,
               // show: MuiInferencer,
               // create: MuiInferencer,
               // canDelete: true,
+            },
+            {
+              name: "agent",
+              list: MuiInferencer,
+              icon: <PeopleAltOutlined />,
+            },
+            {
+              name: "review",
+              list: MuiInferencer,
+              icon: <StarOutlineRounded />,
+            },
+            {
+              name: "message",
+              list: MuiInferencer,
+              icon: <ChatBubbleOutline />,
+            },
+            {
+              name: "my-profile",
+              options: { label: "My Profile" },
+              list: MuiInferencer,
+              icon: <AccountCircleOutlined />,
             },
           ]}
           Title={Title}
@@ -122,6 +166,7 @@ function App() {
           routerProvider={routerProvider}
           authProvider={authProvider}
           LoginPage={Login}
+          DashboardPage={Home}
           i18nProvider={i18nProvider}
         />
       </RefineSnackbarProvider>
