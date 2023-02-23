@@ -150,7 +150,7 @@ const AllProperties = () => {
         />
       </Stack>
 
-      <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
+      {/* <Box mt="20px" sx={{ display: "flex", flexWrap: "wrap", gap: 3 }}>
         {allProperties?.map((property) => (
           <PropertyCard
             key={property._id}
@@ -161,7 +161,7 @@ const AllProperties = () => {
             photo={property.photo}
           />
         ))}
-      </Box>
+      </Box> */}
 
       {allProperties.length > 0 && (
         <Box display="flex" gap={2} mt={3} flexWrap="wrap">
