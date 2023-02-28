@@ -3,7 +3,7 @@ import { Box, Typography } from "@pankod/refine-mui";
 
 import { AgentCard } from "components";
 
-const Agent = () => {
+const Agents = () => {
   const { data, isLoading, isError } = useList({ resource: "users" });
 
   const allAgents = data?.data ?? [];
@@ -41,4 +41,4 @@ const Agent = () => {
   );
 };
 
-export default Agent;
+export default Agents;
