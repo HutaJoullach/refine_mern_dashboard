@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { useLogin } from "@pankod/refine-core";
 import { Container, Box } from "@pankod/refine-mui";
 import { CredentialResponse } from "../interfaces/google";
-import FlutterDashIcon from "@mui/icons-material/FlutterDash";
+import GraphicEqIcon from "@mui/icons-material/GraphicEq";
 
 export const Login: React.FC = () => {
   const { mutate: login } = useLogin<CredentialResponse>();
@@ -42,7 +42,6 @@ export const Login: React.FC = () => {
     <Box
       component="div"
       sx={{
-        // backgroundSize: "cover",
         backgroundColor: "#FCFCFC",
       }}
     >
@@ -65,9 +64,8 @@ export const Login: React.FC = () => {
           }}
         >
           <div>
-            {/* <img src="./refine.svg" alt="Refine Logo" /> */}
-            <FlutterDashIcon
-              sx={{ color: "blue", height: "60px", width: "60px" }}
+            <GraphicEqIcon
+              sx={{ color: "#304ffe", height: "50px", width: "50px" }}
             />
           </div>
           <Box mt={4}>

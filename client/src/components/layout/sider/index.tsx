@@ -206,8 +206,6 @@ export const Sider: typeof DefaultSider = ({ render }) => {
                   fontSize: "14px",
                   fontWeight: isSelected ? "bold" : "normal",
                   color: isSelected ? "#fff" : "#808191",
-                  // marginLeft: "10px",
-                  // marginBottom: "10px",
                 }}
               />
             </ListItemButton>
@@ -243,12 +241,8 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             },
             justifyContent: "center",
             display: "flex",
-            // paddingRight: "16px",
-            // paddingLeft: "16px",
             borderRadius: "8px",
             minHeight: "56px",
-            // minHeight: "36px",
-            // width: "90%",
           }}
         >
           <ListItemIcon
@@ -291,8 +285,6 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           borderRadius: "8px",
           minHeight: "56px",
           width: "90%",
-          // marginLeft: "10px",
-          // marginBottom: "10px",
         }}
       >
         <ListItemIcon
@@ -375,7 +367,6 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             "& .MuiDrawer-paper": {
               width: 256,
               // bgcolor: "secondary.main",
-              // bgcolor: "info.main",
               bgcolor: "#304ffe",
             },
           }}
@@ -400,7 +391,6 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             "& .MuiDrawer-paper": {
               width: drawerWidth,
               // bgcolor: "secondary.main",
-              // bgcolor: "info.main",
               bgcolor: "#304ffe",
               overflow: "hidden",
               transition: "width 200ms cubic-bezier(0.4, 0, 0.6, 1) 0ms",
@@ -429,7 +419,6 @@ export const Sider: typeof DefaultSider = ({ render }) => {
           </Box>
           <Button
             sx={{
-              // background: "rgba(0,0,0,.5)",
               background: "#bdbdbd",
               color: "primary.contrastText",
               textAlign: "center",
@@ -437,7 +426,6 @@ export const Sider: typeof DefaultSider = ({ render }) => {
               justifyContent: "center",
               margin: "0px auto",
               borderRadius: "8px",
-              // minHeight: "56px",
               minHeight: "46px",
               width: "90%",
               marginBottom: "22px",
@@ -461,7 +449,6 @@ export const Sider: typeof DefaultSider = ({ render }) => {
             borderRadius: "0 6px 6px 0",
             // bgcolor: "secondary.main",
             bgcolor: "#304ffe",
-            // bgcolor: "#475be8",
             zIndex: 1199,
             width: "36px",
           }}
